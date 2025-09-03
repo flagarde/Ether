@@ -1,5 +1,9 @@
+if(MSVC)
+  find_package(Kernel32 REQUIRED)
+endif()
+
 add_library(Ether STATIC crt.cpp crt_exit.cpp)
 target_compile_definitions(Ether PRIVATE EXPORT)
-target_link_libraries(Ether PRIVATE kernel32)
+target_link_libraries(Ether PRIVATE $<$<CXX_COMPILER_ID:MSVC>:Kernel32>)
 target_include_directories(Ether PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include> INTERFACE $<INSTALL_INTERFACE:include/Ether>)
 add_library(Ether::Ether ALIAS Ether)
