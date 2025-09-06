@@ -1,9 +1,9 @@
-#if !defined(ETHER_CRT_EXIT)
-#define ETHER_CRT_EXIT
+#pragma once
 
 namespace Ether
 {
-  void exit(int value);
+  namespace CRT
+  {
+    [[noreturn]] void exit(int value) noexcept;
+  }
 }
-
-#endif

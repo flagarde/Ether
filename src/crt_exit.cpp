@@ -17,10 +17,13 @@
    #define NTDDI_WIN11_DT 0
 #endif
 #include <Windows.h>
- void Ether::exit(int value)
+ [[noreturn]] void Ether::CRT::exit(int value) noexcept
  {
    ::ExitProcess(static_cast<UINT>(value));
  }
 #else
+ [[noreturn]] void Ether::CRT::exit(int value) noexcept
+ {
 
+ }
 #endif
