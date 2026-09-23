@@ -1,0 +1,186 @@
+text=auto
+
+# C/C++
+
+*.c text diff=cpp
+*.h text diff=cpp
+*.cc text diff=cpp
+*.hh text diff=cpp
+*.cpp text diff=cpp
+*.cxx text diff=cpp
+*.hpp text diff=cpp
+*.h++ text diff=cpp
+*.c++ text diff=cpp
+
+# Precompiled headers
+
+*.gch binary
+*.pch binary
+
+# Object files
+
+*.o binary
+*.obj binary
+*.lo binary
+*.slo binary
+
+# Static libraries
+
+*.a binary
+*.la binary
+*.lai binary
+*.lib binary
+
+# Shared libraries
+
+*.so binary
+.so. binary
+*.dylib binary
+*.dll binary
+
+# Executables
+
+*.exe binary
+*.out binary
+*.app binary
+
+# CMake
+
+CMakeLists.txt text
+*.cmake text
+
+
+# Documentation
+
+*.md text diff=markdown
+*.markdown text diff=markdown
+*.mdown text diff=markdown
+*.mdwn text diff=markdown
+*.mkd text diff=markdown
+*.mkdn text diff=markdown
+*.mdtxt text
+*.mdtext text
+
+*.adoc text
+*.textile text
+*.tex text diff=tex
+*.bib text diff=bibtex
+*.bibtex text diff=bibtex
+
+*.txt text
+
+AUTHORS text
+CHANGELOG text
+CHANGES text
+CONTRIBUTING text
+COPYING text
+INSTALL text
+LICENSE text
+NEWS text
+README text
+readme text
+TODO text
+COPYRIGHT text
+README text
+
+# Configuration / serialization
+
+*.json text
+*.toml text
+*.xml text
+*.yaml text
+*.yml text
+*.cnf text
+*.conf text
+*.config text
+
+.editorconfig text
+.gitattributes text
+.gitconfig text
+.htaccess text
+
+# Environment files
+
+.env text
+.env.* text
+
+# Scripts
+
+*.sh text eol=lf
+*.bash text eol=lf
+*.fish text eol=lf
+*.ksh text eol=lf
+*.zsh text eol=lf
+
+# Windows scripts
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Lock files
+
+*.lock text -diff
+package-lock.json text eol=lf -diff
+pnpm-lock.yaml text eol=lf -diff
+yarn.lock text -diff
+
+# Binary assets
+
+*.ai binary
+*.bmp binary
+*.eps binary
+*.gif binary
+*.gifv binary
+*.ico binary
+*.jng binary
+*.jp2 binary
+*.jpg binary
+*.jpeg binary
+*.jpx binary
+*.jxr binary
+*.pdf binary
+*.png binary
+*.psb binary
+*.psd binary
+*.svgz binary
+*.tif binary
+*.tiff binary
+*.wbmp binary
+*.webp binary
+
+# Archives
+
+*.7z binary
+*.bz binary
+*.bz2 binary
+*.bzip2 binary
+*.gz binary
+*.lz binary
+*.lzma binary
+*.rar binary
+*.tar binary
+*.taz binary
+*.tbz binary
+*.tbz2 binary
+*.tgz binary
+*.tlz binary
+*.txz binary
+*.xz binary
+*.Z binary
+*.zip binary
+*.zst binary
+
+# Files whose line endings must not be normalized
+
+*.patch -text
+
+# GitHub language detection
+
+*.md linguist-detectable
+
+# Exclude files from source archives
+
+.gitattributes export-ignore
+.gitignore export-ignore
+.gitkeep export-ignore
